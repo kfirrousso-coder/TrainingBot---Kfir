@@ -5,10 +5,9 @@ The robot is 16 by 16 inches, and able to hold onto 2 artifacts.
 
 ## Subsystems
 ### Intake
-- 1 bare NEO directly connected to system
 - Intake wheels are 2in. diameter
-- 1 NEO 550 for intaking inide the hood
-- limit switch to determine when ball is in system
+- 2 NEO 550 for intaking (1 for the contact wheel, 1 for the belt system)
+- 3 limit switches at each possible position in the system
 
 ### Shooter
 - 1 NEO mounted to with 84T to 36T reduction (7:3)
@@ -39,7 +38,7 @@ Location from the centre With NWU coordinate system is as follows:
 ## MVP Requirements
 1. The robot drivetrain is capable of swerve movements (field and robot) [drivetrain subsystem]
 
-2. The robot is capable of intaking and holding onto 2 artifacts [intake subsystem]
+2. The robot is capable of intaking and holding onto 3 artifacts [intake subsystem]
 
 3. The robot is capable of shooting in the close and far launch zone [shooter subsystem]
     1. The robot is able to set and maintain hood angle
@@ -49,5 +48,6 @@ Location from the centre With NWU coordinate system is as follows:
 
 5. The robot is capable of getting pose from the apriltag [tracking subsystem]
     1. The robot is able to determine hood angle and shooter velocity based on the pose provided by the vision system [shooter + tracking subsystems]
+
 
 6. The robot is capable of sorting artifacts by color [intake subsystem]
